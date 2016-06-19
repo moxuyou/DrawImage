@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-jm-jQw">
+                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3VL-Ix-0Yq"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="清屏" id="CUp-71-l9p"/>
+                                    <barButtonItem title="撤销" id="j2G-cN-tir"/>
+                                    <barButtonItem title="橡皮擦" id="Y3n-P3-xwV"/>
+                                    <barButtonItem title="照片" id="wie-Js-LrB"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qm9-cn-crK"/>
+                                    <barButtonItem title="保存" id="5aa-ks-kR2"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNh-93-akj">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qcw-IB-cnW">
+                                        <rect key="frame" x="8" y="10" width="359" height="31"/>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSg-Px-AzG">
+                                        <rect key="frame" x="10" y="60" width="112" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.1215686351" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <state key="normal" title="红色"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxT-nz-64x">
+                                        <rect key="frame" x="132" y="60" width="111" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="黑色"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVY-xj-mak">
+                                        <rect key="frame" x="253" y="60" width="112" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.90093142839999996" blue="0.2233073693" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="黄色"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bVY-xj-mak" firstAttribute="width" secondItem="HSg-Px-AzG" secondAttribute="width" id="0xt-9z-hGv"/>
+                                    <constraint firstItem="jxT-nz-64x" firstAttribute="width" secondItem="HSg-Px-AzG" secondAttribute="width" id="34L-xG-8eY"/>
+                                    <constraint firstAttribute="bottom" secondItem="HSg-Px-AzG" secondAttribute="bottom" constant="10" id="6kk-il-Gz5"/>
+                                    <constraint firstItem="qcw-IB-cnW" firstAttribute="top" secondItem="nNh-93-akj" secondAttribute="top" constant="10" id="81k-aY-HRQ"/>
+                                    <constraint firstItem="bVY-xj-mak" firstAttribute="height" secondItem="HSg-Px-AzG" secondAttribute="height" id="BDh-yp-cs0"/>
+                                    <constraint firstItem="jxT-nz-64x" firstAttribute="height" secondItem="HSg-Px-AzG" secondAttribute="height" id="Do6-Sx-D6U"/>
+                                    <constraint firstAttribute="trailing" secondItem="qcw-IB-cnW" secondAttribute="trailing" constant="10" id="IqB-ZZ-qGp"/>
+                                    <constraint firstItem="bVY-xj-mak" firstAttribute="leading" secondItem="jxT-nz-64x" secondAttribute="trailing" constant="10" id="Kl1-wp-XB7"/>
+                                    <constraint firstAttribute="bottom" secondItem="bVY-xj-mak" secondAttribute="bottom" constant="10" id="MBW-fg-xVz"/>
+                                    <constraint firstAttribute="trailing" secondItem="bVY-xj-mak" secondAttribute="trailing" constant="10" id="XmP-u8-QGC"/>
+                                    <constraint firstItem="HSg-Px-AzG" firstAttribute="leading" secondItem="nNh-93-akj" secondAttribute="leading" constant="10" id="apB-R8-Xx8"/>
+                                    <constraint firstAttribute="bottom" secondItem="jxT-nz-64x" secondAttribute="bottom" constant="10" id="cfV-KK-qlD"/>
+                                    <constraint firstAttribute="height" constant="100" id="knx-Pq-K1I"/>
+                                    <constraint firstItem="qcw-IB-cnW" firstAttribute="leading" secondItem="nNh-93-akj" secondAttribute="leading" constant="10" id="rG2-TH-vb5"/>
+                                    <constraint firstItem="jxT-nz-64x" firstAttribute="leading" secondItem="HSg-Px-AzG" secondAttribute="trailing" constant="10" id="tKB-mY-8ZR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31A-SR-OSW">
+                                <rect key="frame" x="0.0" y="54" width="375" height="513"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="31A-SR-OSW" firstAttribute="top" secondItem="3h2-jm-jQw" secondAttribute="bottom" id="9BZ-qN-2YT"/>
+                            <constraint firstItem="nNh-93-akj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="GR5-OG-L1y"/>
+                            <constraint firstItem="3h2-jm-jQw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="IL3-pK-vXC"/>
+                            <constraint firstAttribute="trailing" secondItem="31A-SR-OSW" secondAttribute="trailing" id="S3s-BH-4sj"/>
+                            <constraint firstAttribute="bottom" secondItem="nNh-93-akj" secondAttribute="bottom" id="e6T-z4-Ifa"/>
+                            <constraint firstItem="3h2-jm-jQw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="10" id="ihA-8v-H0K"/>
+                            <constraint firstAttribute="trailing" secondItem="nNh-93-akj" secondAttribute="trailing" id="n6b-6z-yUP"/>
+                            <constraint firstAttribute="trailing" secondItem="3h2-jm-jQw" secondAttribute="trailing" id="qZv-AM-ggt"/>
+                            <constraint firstItem="nNh-93-akj" firstAttribute="top" secondItem="31A-SR-OSW" secondAttribute="bottom" id="yVI-Vb-uxb"/>
+                            <constraint firstItem="31A-SR-OSW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="yd8-FJ-9xG"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241.5" y="384.5"/>
+        </scene>
+    </scenes>
+</document>
